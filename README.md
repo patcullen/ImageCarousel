@@ -20,6 +20,7 @@ How to use
 	</li>
 	<li>
 		Copy the following code into the head tag of your website.
+		<pre name="code" class="html">
 &lt;script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js" language="JavaScript" type="text/javascript" &gt;&lt;/script&gt;
 &lt;link href="ImageCarousel/ImageCarousel.css" rel="stylesheet" type="text/css"&gt;
 &lt;script src="ImageCarousel/ImageCarousel.js" language="JavaScript" type="text/javascript"&gt;&lt;/script&gt;
