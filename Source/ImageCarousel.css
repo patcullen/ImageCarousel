@@ -1,0 +1,83 @@
+/* default look and feel */
+.ImageCarousel .panel {
+	margin: 20px;
+}
+.ImageCarousel .panel .number {
+	margin: 5px;
+	width: 30px; height: 30px; line-height: 30px;
+	font-size: 24px;
+	background-color: #ccc;
+	color: #222;
+	border: 2px solid #eee;
+	/* rounded corners for real browsers */
+	-moz-border-radius: 4px; /* FF1+ */
+	-webkit-border-radius: 4px; /* Saf3+, Chrome */
+	border-radius: 4px; /* Opera 10.5, IE 9 */
+	-moz-opacity:.70; filter:alpha(opacity=70); opacity:.70;
+}
+.ImageCarousel .panel .number.active {
+	-moz-opacity:.95; filter:alpha(opacity=95); opacity:.95;
+	background-color: #bbb;
+	color: #000;
+	border: 2px solid #fff;
+}
+.ImageCarousel .panel .number:hover {
+	-moz-opacity:.95; filter:alpha(opacity=95); opacity:.95;
+}
+
+
+
+/* circle border LAF */
+.ImageCarousel.circle .panel .number {
+	border: 2px solid #eee;
+	-moz-border-radius: 16px; /* FF1+ */
+	-webkit-border-radius: 16px; /* Saf3+, Chrome */
+	border-radius: 16px; /* Opera 10.5, IE 9 */
+}
+.ImageCarousel.circle .panel .number.active {
+	border: 2px solid #fff;
+}
+
+
+
+
+
+/* functional css, layout and positioning. css below here shouldnt need to be altered for aestetics. */
+
+.ImageCarousel {
+	font-family: Arial;
+	overflow: hidden;
+	border: 0px solid transparent !important;
+	background-image: url(load.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	position:relative;
+}
+.ImageCarousel>* { /* Try automatically make most sub elements higher z-index than slides and numbers */
+	position: absolute;
+	z-index: 20;
+}
+
+.ImageCarousel .slide {
+	position: absolute;
+	left: 0px; top: 0px;
+	z-index: 3;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.ImageCarousel .panel {
+	position: absolute;
+	overflow: hidden;
+	z-index: 4;
+	float: left;
+}
+
+.ImageCarousel.right .panel { right: 0px; }
+.ImageCarousel.bottom .panel { bottom: 0px; }
+
+.ImageCarousel .panel .number {
+	cursor: pointer;
+	float: left;
+	text-align: center;
+}
