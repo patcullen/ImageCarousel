@@ -16,7 +16,7 @@ How to use
 		Copy ImageCarousel.php into the folder from step one.
 	</li>
 	<li>
-		<a href="ImageCarousel.zip">Download</a> and unzip the ImageCarousel files into your project folder. They should unzip into a folder called 'ImageCarousel'.
+		Download and unzip the ImageCarousel files into your project folder. They should unzip into a folder called 'ImageCarousel'.
 	</li>
 	<li>
 		Copy the following code into the head tag of your website.
