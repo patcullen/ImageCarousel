@@ -29,7 +29,7 @@ How to use
 	<li>
 		Copy the following code into your webpage. This will act as the carousel element.
 		<pre name="code" class="html">
-&lt;div class="ImageCarousel auto" rel="Images/Carousel/" styles="width: 500px; height: 375px;"&gt;&lt;/div&gt;
+&lt;div class="ImageCarousel auto" rel="Images/Carousel/" style="width: 500px; height: 375px;"&gt;&lt;/div&gt;
 		</pre>
 		You need to change/check:
 		<ul>
